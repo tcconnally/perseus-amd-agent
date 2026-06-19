@@ -28,7 +28,7 @@ The AMD MI300X's 192GB HBM3 is uniquely suited for this workload. Unlike multi-G
 AI Agents
 
 ## GitHub Repo
-https://github.com/tcconnally/perseus-amd-agent
+https://github.com/Perseus-Computing-LLC/perseus-amd-agent
 
 ## Demo Video
 [YouTube URL — to be added]
