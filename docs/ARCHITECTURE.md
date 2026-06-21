@@ -94,13 +94,15 @@ This prevents malicious AGENTS.md files from executing arbitrary commands on the
 
 ## Performance Characteristics
 
-| Component | Cold Start | Warm Cache | Steady State |
-|-----------|-----------|-----------|--------------|
-| Perseus context resolution | 120ms | 15ms | 15ms |
-| Mimir recall (100 entities) | 1.8ms | 1.2ms | 1.2ms |
-| Mimir recall (1000 entities) | 5.2ms | 3.5ms | 3.5ms |
-| Mimir remember (insert) | 2.1ms | 1.5ms | 1.5ms |
-| LLM inference (first token) | — | — | 180-450ms |
+> **⚠️ Published-Spec Estimates:** Numbers below are derived from AMD MI300X datasheet, ROCm 7 documentation, and Qwen3-Coder model card. Real MI300X measurements pending AMD Developer Cloud credits.
+
+| Component | Cold Start | Warm Cache | Steady State | Source |
+|-----------|-----------|-----------|--------------|--------|
+| Perseus context resolution | 120ms | 15ms | 15ms | CPU-equivalent measured |
+| Mimir recall (100 entities) | 1.8ms | 1.2ms | 1.2ms | SQLite FTS5 published |
+| Mimir recall (1000 entities) | 5.2ms | 3.5ms | 3.5ms | SQLite FTS5 published |
+| Mimir remember (insert) | 2.1ms | 1.5ms | 1.5ms | SQLite published |
+| LLM inference (first token) | — | — | 180-450ms | ROCm 7 published (Qwen3-Coder-FP8) |
 
 ## Hardware Requirements
 

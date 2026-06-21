@@ -89,48 +89,47 @@
 
 ## Execution Plan
 
-### Phase 1: Repo Setup (Today)
-- [x] Create repo: `tcconnally/perseus-amd-agent`
-- [x] README with architecture, benchmarks, quick start
-- [ ] Register for AMD Developer Program ($100 credits)
+## Current Status (June 21, 2026 — 20 days to deadline)
+
+- [x] Repo created: `Perseus-Computing-LLC/perseus-amd-agent`
+- [x] Architecture diagram with published-spec labeling
+- [x] Benchmark suite with honest data-source labeling
+- [x] Demo terminal simulation (Playwright-compatible)
+- [x] SUBMISSION.md (LabLab.ai format)
+- [x] Demo script (5-scene, 3-minute)
+- [x] Cost economics tables (math-based, no GPU required)
+- [ ] Demo video recording (in progress)
+- [ ] Architecture thumbnail re-rendered with published-spec label
+- [ ] Push all changes to GitHub
+- [ ] Register for AMD Developer Program ($100 credits + $50 Fireworks AI)
 - [ ] Join lablab Act II team
-- [ ] Write demo script
+- [ ] Upload demo video to YouTube
+- [ ] Submit on LabLab.ai (July 6-11 window)
 
-### Phase 2: Benchmark Suite (This Week)
-- [ ] Spin up MI300X instance via AMD Developer Cloud
-- [ ] Run context resolution benchmarks (cold/warm latency)
-- [ ] Measure VRAM footprint, throughput, token savings
-- [ ] Generate benchmark tables with graphs
-- [ ] Test 3-session progression
+### AMD Cloud Credits Status
 
-### Phase 3: Demo Video (Week Before)
-- [ ] Record 3-session progression (screen + voiceover)
-- [ ] Build architecture thumbnail (SVG → PNG)
-- [ ] Create presentation slides
-- [ ] Upload video to YouTube
+AMD Developer Cloud credits have not arrived (11 days since request). Fireworks AI API credits ($50) may have arrived separately — these are sufficient for Track 3 (Unicorn Track) which requires "one or both of AMD Compute pods and Fireworks AI API credits."
 
-### Phase 4: Submission (July 6-11)
-- [ ] Submit to Lablab platform
-- [ ] Post to social (X, Reddit, Discord)
-- [ ] Submit to AMD project showcase
+**Strategy:** Build everything without credits. All benchmarks are labeled with data source (`published-spec`, `measured`, `mathematical projection`). When credits arrive, swap in real measurements — the architecture and code don't change.
 
 ---
 
 ## Risks and Mitigations
 
-| Risk | Impact | Mitigation |
-|------|--------|-----------|
-| AMD cloud credits don't arrive in time | Can't run MI300X benchmarks | Fall back to ROCm emulation or local AMD GPU |
-| MI300X API limits token context | Can't show full 256K context | Demo with representative sample, claim capability |
-| Video recording quality | Presentation score hit | Use Playwright terminal simulation for clean output |
-| Time (5 days is tight) | Rush job | Pre-build everything before the window opens |
+| Risk | Impact | Mitigation | Status |
+|------|--------|-----------|--------|
+| AMD cloud credits don't arrive | Can't run MI300X benchmarks | **Done.** All benchmarks labeled with data source. Published-spec estimates in place. | ✅ MITIGATED |
+| Fireworks AI credits also delayed | Can't show Fireworks AI integration | Plan B: Show architecture with Fireworks AI integration described; code is ready | ⚠️ WATCH |
+| LabLab submission format unknown | Wrong format = rejected | LabLab has simpler form than Devpost. Submission text pre-written in SUBMISSION.md. | ✅ READY |
+| Video over 3 minutes | Disqualified | Script designed for 2:35. Record at 165s with 10s buffer. | ✅ MITIGATED |
+| Time (20 days out) | Rush job | **All code assets built.** Only video recording + registration remain. | ✅ AHEAD |
 
 ---
 
 ## Key URLs
 
-- **Repo:** https://github.com/tcconnally/perseus-amd-agent
+- **Repo:** https://github.com/Perseus-Computing-LLC/perseus-amd-agent
 - **Hackathon:** https://lablab.ai/ai-hackathons/amd-developer-hackathon-act-ii
 - **AMD Developer Program:** https://www.amd.com/en/developer/ai-dev-program.html
 - **Perseus:** https://github.com/tcconnally/perseus
-- **Mimir:** https://github.com/tcconnally/mimir
+- **Mimir:** https://github.com/Perseus-Computing-LLC/mimir

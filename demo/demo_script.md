@@ -48,10 +48,12 @@ recall: "auth middleware" → JWT, 30-min expiry, middleware chain
 
 ---
 
-## Scene 4: The Full Stack on AMD (1:45-2:30)
+## Scene 4: Architecture + Benchmarks on AMD (1:30-2:10)
 **Visual:** Architecture diagram + benchmark table overlay.
 
-**Narrator:** "Here's the full picture. Perseus handles context, Mimir handles memory, and everything runs on AMD MI300X GPUs."
+**Narrator:** "Here's the full picture. Perseus handles context, Mimir handles memory, and everything targets AMD MI300X GPUs. These benchmarks are derived from AMD published specifications — ROCm 7 documentation, MI300X datasheet, and Qwen3-Coder model card. Real measurements pending AMD Developer Cloud credits."
+
+**Action:** Show benchmark table with published-spec label:
 
 **Action:** Show benchmark table:
 ```
@@ -81,10 +83,10 @@ recall: "auth middleware" → JWT, 30-min expiry, middleware chain
 
 ---
 
-## Scene 5: Call to Action (2:30-3:00)
+## Scene 5: Cost Economics + Call to Action (2:10-2:35)
 **Visual:** GitHub repo + MIT license badge.
 
-**Narrator:** "Perseus and Mimir are both MIT-licensed, open-source, and ready today. Install with pip, run on AMD MI300X, and give your agents the context they deserve."
+**Narrator:** "Perseus and Mimir are both MIT-licensed, open-source, and ready today. Install with pip, target AMD MI300X, and give your agents the context they deserve. Real benchmarks coming as soon as AMD Developer Cloud credits arrive — but the architecture works today."
 
 **Action:** Show install command:
 ```bash
