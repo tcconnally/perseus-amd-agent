@@ -1,0 +1,19 @@
+# Build artifacts
+demo/video_output/
+*.webm
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
